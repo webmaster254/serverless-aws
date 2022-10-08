@@ -15,7 +15,7 @@ export class ToDoAccess  {
    
     private readonly s3Client: Types = new XAWS.S3({ signatureVersion: 'v4' }),//updated to XAWS
     private readonly todoTable = process.env.TODOS_TABLE,
-    private readonly s3BucketName = process.env.IMAGES_S3_BUCKET
+    private readonly s3BucketName = process.env.S3_BUCKET_NAME
     ) {
   }
 
